@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f2f2f2;
+    left: 1000;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+.item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 20px;
+    display: inline-block;
+}
+
+.square {
+    background-color: green;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: rgb(83, 34, 34);
+    text-align: center;
+}
+
+.item-especial {
+    width: 400px;
+    margin-left: 5px;
+    margin-right: auto; /* Adicionado para manter a mesma distância da margem direita */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 20px;
+    display: inline-block;
+}
+
+
+@media screen and (max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+.header {
+    
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 1px;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.footer {
+    border: 1px solid #ddd;
+    position: fixed;
+    left: 1000;
+    right: 1000;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    background-color: #ffffff; /* Cor de fundo alterada para branco */
+}
+
+
